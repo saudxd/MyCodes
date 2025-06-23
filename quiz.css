@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at center, #020024 0%, #090979 35%, #00d4ff 100%);
+    color: #fff;
+}
+
+.panel {
+    margin: 5% auto;
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ff4c4c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.options {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.options div {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.options div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: white;
+    color: #ff0000;
+    border: 2px solid #00d4ff;
+    transform: scale(1.05);
+}
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00ffe7;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#score {
+    font-size: 28px;
+    color: #e1fffb;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    text-align: center;
+}
